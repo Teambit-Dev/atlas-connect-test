@@ -3,7 +3,7 @@ spring.datasource.url: jdbc:hsqldb:file:addon-db # Use a file-based backing stor
 
 addon:
   key: atlassian-connect-spring-boot-sample-atlaskit
-  base-url: http://localhost:${local.server.port}
+  base-url: https://atlas-connect-test.onrender.com
 
 logging.level.com.atlassian.connect.spring: DEBUG
 
