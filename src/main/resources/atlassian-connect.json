@@ -1,0 +1,43 @@
+{
+  "key": "${addon.key}",
+  "baseUrl": "${addon.base-url}",
+  "name": "Teambit Integration plugin",
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {
+    "installed": "/installed",
+    "uninstalled": "/uninstalled"
+  },
+  "scopes": ["READ", "WRITE"],
+  "modules": {
+    "generalPages": [
+      {
+        "url": "/atlaskit",
+        "icon": {
+          "width": 80,
+          "height": 80,
+          "url": "/maps/icon.png"
+        },
+        "name": {
+          "value": "My General Page"
+        },
+        "key": "my-general-page"
+      },
+      {
+        "key": "atlaskit-page-confluence",
+        "location": "system.header/left",
+        "name": {
+          "value": "Atlaskit"
+        },
+        "url": "/atlaskit"
+      }
+    ],
+    "webhooks": [
+      {
+        "event": "jira:issue_updated",
+        "url": "/updated"
+      }
+    ]
+  }
+}
