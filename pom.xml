@@ -59,18 +59,18 @@
                     <fork>true</fork>
                 </configuration>
             </plugin>
-            <plugin>
-                <!-- inspiration from https://medium.com/@l1ambda/webpack-a-spring-boot-app-with-instant-page-refresh-5d051a09d26f -->
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>exec</goal>
-                        </goals>
-                    </execution>
-                </executions>
+<!--            <plugin>-->
+<!--                &lt;!&ndash; inspiration from https://medium.com/@l1ambda/webpack-a-spring-boot-app-with-instant-page-refresh-5d051a09d26f &ndash;&gt;-->
+<!--                <groupId>org.codehaus.mojo</groupId>-->
+<!--                <artifactId>exec-maven-plugin</artifactId>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <phase>generate-resources</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>exec</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
 <!--                <configuration>-->
 <!--                    <executable>${npm.executable}</executable>-->
 <!--                    <arguments>-->
@@ -79,7 +79,7 @@
 <!--                    </arguments>-->
 <!--                    <workingDirectory>.</workingDirectory>-->
 <!--                </configuration>-->
-            </plugin>
+<!--            </plugin>-->
         </plugins>
     </build>
 
