@@ -71,14 +71,14 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <executable>${npm.executable}</executable>
-                    <arguments>
-                        <argument>run</argument>
-                        <argument>build</argument>
-                    </arguments>
-                    <workingDirectory>.</workingDirectory>
-                </configuration>
+<!--                <configuration>-->
+<!--                    <executable>${npm.executable}</executable>-->
+<!--                    <arguments>-->
+<!--                        <argument>run</argument>-->
+<!--                        <argument>build</argument>-->
+<!--                    </arguments>-->
+<!--                    <workingDirectory>.</workingDirectory>-->
+<!--                </configuration>-->
             </plugin>
         </plugins>
     </build>
